@@ -20,9 +20,6 @@ public class Banque
                 return null;
         }
         // set { } // banque["BE01"] = new Courant(...)
-        // set { } // banque["BE01"] = new Courant(...)
-        // set { } // banque["BE01"] = new Courant(...)
-        // set { } // banque["BE01"] = new Courant(...)
     }
 
     public void Ajouter(Courant courant)
