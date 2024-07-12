@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoOO.Models.Encaps
+namespace DemoOO.Models.Heritage
 {
     public class Vehicule
     {
@@ -37,10 +37,31 @@ namespace DemoOO.Models.Encaps
             this.KmParcouru = 0;
         }
 
-        public void SeDeplacer(int km)
+        public virtual void SeDeplacer(int km)
         {
             Console.WriteLine($"Le vehicule de deplace de {km} km");
             this.KmParcouru = this.KmParcouru + km;
+        }
+
+        public override string? ToString()
+        {
+            return $"Vehicule {{ " +
+                   $"marque: {Marque}, " +
+                   $"modele: {Modele}, " +
+                   $"kmParcouru: {KmParcouru} " +
+                   $"}}";
+        }
+
+        public override bool Equals(object? o)
+        {
+            if (!(o is Vehicule))
+                return false;
+
+            Vehicule that = (Vehicule) o;
+
+            return this.KmParcouru == that.KmParcouru &&
+                   this.Marque == that.Marque &&
+                   this.Modele == that.Modele;
         }
         
         
