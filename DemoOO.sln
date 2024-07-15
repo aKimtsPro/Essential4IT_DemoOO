@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exo3_SurchargeOpe", "Exo3_S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo4_Heritage", "Exo4_Heritage\Exo4_Heritage.csproj", "{E76A489F-9B12-4922-A450-74517288E566}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo6_Abstract", "Exo6_Abstract\Exo6_Abstract.csproj", "{EE3AD27E-90E7-4679-9DBE-17090EE346C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{E76A489F-9B12-4922-A450-74517288E566}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E76A489F-9B12-4922-A450-74517288E566}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E76A489F-9B12-4922-A450-74517288E566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE3AD27E-90E7-4679-9DBE-17090EE346C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE3AD27E-90E7-4679-9DBE-17090EE346C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE3AD27E-90E7-4679-9DBE-17090EE346C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE3AD27E-90E7-4679-9DBE-17090EE346C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
