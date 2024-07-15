@@ -11,7 +11,7 @@ public class Voiture : Vehicule
         NbrPortes = nbrPortes;
     }
 
-    public Voiture() : base("ma marque", "mon modele")
+    public Voiture()
     {
         NbrPortes = 5;
         Marque = "truc";
@@ -21,6 +21,12 @@ public class Voiture : Vehicule
     {
         base.SeDeplacer(km);
         Console.WriteLine("Je me deplace en tant que Voiture");
+    }
+
+
+    public void SeDeplacer()
+    {
+        base.SeDeplacer(10);
     }
     
     
