@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+
+using Exo4_Heritage;
+
+Epargne e = new Epargne("BE01", new Personne(), -1000000000);

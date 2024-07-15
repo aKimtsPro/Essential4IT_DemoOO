@@ -41,6 +41,7 @@ namespace DemoOO.Models.Heritage
         {
             Console.WriteLine($"Le vehicule de deplace de {km} km");
             this.KmParcouru = this.KmParcouru + km;
+            SeGarer();
         }
 
         public override string? ToString()
