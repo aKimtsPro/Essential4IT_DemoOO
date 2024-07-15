@@ -72,8 +72,8 @@ public class Program
         // Console.WriteLine(vehicule.NbrPortes); // déclaré dans Voiture => pas accessible
         
         Vehicule vehicule2 = new Vehicule("m", "m"); // contient une rèf à un Vehicule
-
-        // Voiture voit = (Voiture) vehicule2; // Erreur:
+        
+        Voiture voit = (Voiture) vehicule2; // Erreur:
         // la variable vehicule2 ne fait pa réf à un objet compable avec le type Voiture
         
         Console.WriteLine("Tentative de cast de la variable vehicule");
@@ -100,6 +100,7 @@ public class Program
             Console.WriteLine("vehicule2 n'est pas une Voiture");
         }
 
+        
         object objVoit = voiture;
         object objVehicule = vehicule2;
         object objObj = new object();
@@ -114,7 +115,9 @@ public class Program
 
 
         Vehicule veh1 = new Vehicule("marque1", "modele1"); // adr07
-        Vehicule veh2 = new Vehicule("marque1", "modele1"); // adr48
+        Vehicule veh2 = new Vehicule("marque2", "modele1"); // adr48
+        Vehicule veh3 = veh1; // adr07
+        
         // veh2.SeDeplacer(15);
 
         // Vérifie les adresses 

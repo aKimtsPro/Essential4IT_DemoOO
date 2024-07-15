@@ -29,7 +29,7 @@ namespace DemoOO.Models.Heritage
             }
         }
 
-        // public Vehicule(){}
+        public Vehicule(){}
 
         public Vehicule(string marque, string modele) {
             this.Marque = marque;
@@ -59,8 +59,7 @@ namespace DemoOO.Models.Heritage
 
             Vehicule that = (Vehicule) o;
 
-            return this.KmParcouru == that.KmParcouru &&
-                   this.Marque == that.Marque &&
+            return this.Marque == that.Marque &&
                    this.Modele == that.Modele;
         }
         
