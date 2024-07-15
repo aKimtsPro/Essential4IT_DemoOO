@@ -28,6 +28,11 @@ public class Voiture : Vehicule
     {
         base.SeDeplacer(10);
     }
-    
-    
+
+    public override void SeGarer()
+    {
+        Console.WriteLine("Je me gare en tant que voiture");
+    }
+
+
 }

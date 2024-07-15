@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DemoOO.Models.Heritage
 {
-    public class Vehicule
+    public abstract class Vehicule
     {
         //public string Marque;
 
@@ -62,7 +62,8 @@ namespace DemoOO.Models.Heritage
             return this.Marque == that.Marque &&
                    this.Modele == that.Modele;
         }
-        
+
+        public abstract void SeGarer();
         
 
     }
