@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DemoOO.Models.Heritage
 {
-    public abstract class Vehicule
+    public class Vehicule
     {
         //public string Marque;
 
@@ -41,7 +41,6 @@ namespace DemoOO.Models.Heritage
         {
             Console.WriteLine($"Le vehicule de deplace de {km} km");
             this.KmParcouru = this.KmParcouru + km;
-            SeGarer();
         }
 
         public override string? ToString()
@@ -63,9 +62,6 @@ namespace DemoOO.Models.Heritage
             return this.Marque == that.Marque &&
                    this.Modele == that.Modele;
         }
-
-        public abstract void SeGarer();
-        
 
     }
 }
