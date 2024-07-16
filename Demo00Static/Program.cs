@@ -2,4 +2,10 @@
 
 using DemoStatic;
 
-Console.WriteLine("Hello, World!");
+
+for(int i = 0; i < 500_000; i++)
+{
+    ToDispose disp = new ToDispose();
+    
+    disp.Dispose();
+}
