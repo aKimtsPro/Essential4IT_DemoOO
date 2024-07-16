@@ -1,4 +1,4 @@
-﻿namespace DemoInterface;
+﻿namespace DemoOOInterface.Interfaces;
 
 public interface INaviguer
 {

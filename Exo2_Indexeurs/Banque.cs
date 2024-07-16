@@ -21,7 +21,18 @@ public class Banque
         }
         // set { } // banque["BE01"] = new Courant(...)
     }
+    
+    public Courant GetCourant(string numCompte)
+    {
+        // ...
+        return null;
+    }
 
+    public void SetCourant(string numCompte, Courant value)
+    {
+        // ...
+    }
+    
     public void Ajouter(Courant courant)
     {
         Comptes.Add(courant.Numero, courant);

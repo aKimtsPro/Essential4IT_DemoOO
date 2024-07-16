@@ -1,8 +1,14 @@
-﻿namespace DemoInterface;
+﻿using DemoOOInterface.Interfaces;
+
+namespace DemoOOInterface.Models;
 
 public class VoitureAmphibie : Vehicule, IAmphibie
 {
     public bool ModeMaritime { get; set; }
+
+    public VoitureAmphibie(string marque, string modele) : base(marque, modele)
+    {
+    }
 
     public override void SeDeplacer()
     {

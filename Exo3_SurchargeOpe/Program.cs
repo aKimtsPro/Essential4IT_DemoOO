@@ -9,6 +9,9 @@ Courant c1 = new Courant("BE01", p1);
 Courant c2 = new Courant("BE02", p1);
 Courant c3 = new Courant("BE03", p2);
 
+double rslt = 0.5 + c1;
+rslt = c1 * 3;
+
 Banque b = new Banque("MaBanque");
 
 b.Ajouter(c1);

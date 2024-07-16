@@ -14,6 +14,11 @@ banque.Ajouter(c2);
 banque.Ajouter(c3);
 banque.Ajouter(c4);
 
+// banque.SetCourant(c2.Numero, c2);
+// banque[c2.Numero] = c2;
+
+
+// Courant recupC1 = banque.GetCourant("BE01");
 Courant recupC1 = banque["BE01"];
 Console.WriteLine( recupC1 == null ? "null" : recupC1 );
 

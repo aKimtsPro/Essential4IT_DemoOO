@@ -77,11 +77,16 @@ namespace Exo3_SurchargeOpe
             //     return 0 + 0;
             // }
         }
-
+        
         public static double operator + (double b, Courant a)
         {
             double soldeEffectifA = a.Solde >= 0 ? a.Solde : 0;
             return soldeEffectifA + b;
+        }
+
+        public static double operator *(Courant a, int b)
+        {
+            return a.Solde * b;
         }
     }
 }
